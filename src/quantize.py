@@ -1,5 +1,6 @@
 import numpy as np
 from utils import setup_logging, load_data, load_model, evaluate_model, save_dict
+from sklearn.metrics import r2_score
 
 
 def quantize_to_uint8(array):
@@ -43,9 +44,8 @@ def main():
     deq_intercept = dequantize_uint8(q_intercept, int_scale, int_min)[0]
 
     preds = np.dot(X, deq_coef) + deq_intercept
-    r2 = evaluate_model(model=None, X=X, y=preds)[0] 
+    r2 = r2_score(y, preds)
     print(f"R2 score using dequantized weights: {r2:.4f}")
-
 
 if __name__ == "__main__":
     main()
