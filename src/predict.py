@@ -1,4 +1,4 @@
-from src.utils import setup_logging, load_data, load_model
+from utils import setup_logging, load_data, load_model
 
 
 def main():

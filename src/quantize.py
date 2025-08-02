@@ -1,5 +1,5 @@
 import numpy as np
-from src.utils import setup_logging, load_data, load_model, evaluate_model, save_dict
+from utils import setup_logging, load_data, load_model, evaluate_model, save_dict
 
 
 def quantize_to_uint8(array):

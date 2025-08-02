@@ -1,5 +1,5 @@
 from sklearn.linear_model import LinearRegression
-from src.utils import setup_logging, load_data, evaluate_model, save_model
+from utils import setup_logging, load_data, evaluate_model, save_model
 
 
 def main():
