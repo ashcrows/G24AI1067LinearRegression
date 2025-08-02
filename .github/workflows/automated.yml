@@ -29,7 +29,7 @@ jobs:
       - name: Step4- Run tests
         run: |
           source venv/bin/activate
-          PYTHONPATH=src pytest tests/
+          pytest tests/
 
   train_and_quantize:
     name: Train and Quantize Model

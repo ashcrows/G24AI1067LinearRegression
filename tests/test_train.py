@@ -1,7 +1,11 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
+
 import pytest
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
-from src.utils import load_data
+from utils import load_data
 
 
 @pytest.fixture(scope="module")
