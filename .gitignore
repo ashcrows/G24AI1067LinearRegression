@@ -422,4 +422,10 @@ FodyWeavers.xsd
 __pycache__/
 *.pyc
 .env
-/data/
+#/data/
+venv/
+
+.pytest_cache/
+
+# Artifacts
+# artifacts/
